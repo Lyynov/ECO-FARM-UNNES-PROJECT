@@ -1,0 +1,19 @@
+[Unit]
+Description=Exhaust Fan IoT System Backend Service
+After=network.target mosquitto.service
+Wants=mosquitto.service
+
+[Service]
+User=pi
+WorkingDirectory=/opt/exhaust-fan-system/backend
+ExecStart=/opt/exhaust-fan-system/backend/venv/bin/gunicorn -b 0.0.0.0:5000 -w 4 app:app
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=exhaust-backend
+Environment="PATH=/opt/exhaust-fan-system/backend/venv/bin"
+Environment="PYTHONPATH=/opt/exhaust-fan-system/backend"
+
+[Install]
+WantedBy=multi-user.target

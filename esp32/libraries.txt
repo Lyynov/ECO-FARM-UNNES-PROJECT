@@ -1,0 +1,42 @@
+# Required Libraries for ESP32 Exhaust Fan Controller
+
+# WiFi Library
+- WiFi (Built-in with ESP32 Arduino Core)
+
+# MQTT Client
+- PubSubClient by Nick O'Leary (v2.8.0 or later)
+  - Install via Arduino Library Manager
+  - GitHub: https://github.com/knolleary/pubsubclient
+
+# JSON Parsing
+- ArduinoJson by Benoit Blanchon (v6.19.0 or later)
+  - Install via Arduino Library Manager
+  - GitHub: https://github.com/bblanchon/ArduinoJson
+
+# Temperature Sensor Libraries
+
+## For DHT22 Sensor
+- DHT sensor library by Adafruit (v1.4.3 or later)
+  - Install via Arduino Library Manager
+  - GitHub: https://github.com/adafruit/DHT-sensor-library
+- Adafruit Unified Sensor by Adafruit (dependency for DHT library)
+  - Install via Arduino Library Manager
+  - GitHub: https://github.com/adafruit/Adafruit_Sensor
+
+## For DS18B20 Sensor
+- OneWire by Paul Stoffregen (v2.3.6 or later)
+  - Install via Arduino Library Manager
+  - GitHub: https://github.com/PaulStoffregen/OneWire
+- DallasTemperature by Miles Burton (v3.9.1 or later)
+  - Install via Arduino Library Manager
+  - GitHub: https://github.com/milesburton/Arduino-Temperature-Control-Library
+
+# Optional Libraries
+
+## For OTA Updates
+- ArduinoOTA (Built-in with ESP32 Arduino Core)
+
+## For WiFiManager (easier WiFi setup)
+- WiFiManager by tzapu (v2.0.5-beta or later)
+  - Install via Arduino Library Manager
+  - GitHub: https://github.com/tzapu/WiFiManager

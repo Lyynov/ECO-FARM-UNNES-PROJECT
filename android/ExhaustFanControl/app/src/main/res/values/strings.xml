@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Exhaust Fan Control</string>
+    <string name="app_title">IoT Exhaust Fan Control System</string>
+    
+    <!-- Fan 1 -->
+    <string name="fan_1_title">Exhaust Fan 1</string>
+    
+    <!-- Fan 2 -->
+    <string name="fan_2_title">Exhaust Fan 2</string>
+    
+    <!-- Common Labels -->
+    <string name="temperature_label">Temperature:</string>
+    <string name="temperature_value">%.1f°C</string>
+    <string name="status_label">Status:</string>
+    <string name="fan_switch_label">Fan Control:</string>
+    <string name="auto_mode_label">Auto Mode:</string>
+    <string name="refresh_button">Refresh</string>
+    
+    <!-- Status Messages -->
+    <string name="refresh_success">Data refreshed successfully</string>
+    <string name="refresh_failed">Failed to refresh data</string>
+    <string name="control_success">Command sent successfully</string>
+    <string name="control_failed">Failed to send command</string>
+    <string name="auto_mode_warning">Cannot switch fan manually in AUTO mode</string>
+    
+    <!-- Modes -->
+    <string name="mode_auto">AUTO</string>
+    <string name="mode_manual">MANUAL</string>
+    
+    <!-- Fan Status -->
+    <string name="fan_on">ON</string>
+    <string name="fan_off">OFF</string>
